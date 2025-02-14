@@ -16,6 +16,7 @@ const ArchivedProjectsView = () => {
         {
             name: "Sample Project",
             description: ""
+    
         },
         {
             name: "Sample Project",
