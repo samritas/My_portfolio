@@ -79,15 +79,15 @@ export default function Seo(props: SeoProps) {
     },
     {
       name: "og:image",
-      content: ogImage.images.fallback.src,
+      content: ogImage?.images?.fallback?.src || "",
     },
     {
       name: "og:image:width",
-      content: `${ogImage.width}`,
+      content: `${ogImage?.width || ""}`,
     },
     {
       name: "og:image:height",
-      content: `${ogImage.height}`,
+      content: `${ogImage?.height || ""}`,
     },
     {
       name: "og:type",
@@ -123,7 +123,7 @@ export default function Seo(props: SeoProps) {
     },
     {
       name: "twitter:image",
-      content: ogImage.images.fallback.src,
+      content: ogImage?.images?.fallback?.src || "",
     },
     {
       name: "twitter:creator",

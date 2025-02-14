@@ -24,15 +24,7 @@ const IndexPage = () => {
       <Seo
         title="Samrawit Tesfahun"
         description="Hello, I am Samrawit Tesfahun, Full-stack developer based in Ethiopia."
-        featuredImage={{
-          images: {
-            fallback: {
-              src: "https://tesfamichael.dev/screen.png",
-            },
-          },
-          width: 12,
-          height: 21,
-        }}
+        
       />
 
       <NavBarView setView={setView} />

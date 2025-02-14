@@ -3,13 +3,14 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `portfolio`,
-    siteUrl: `https://tesfamichael.dev/`,
+    siteUrl: `https://samrawit.dev/`,
     og: {
-      siteName: 'Tesfamichael Portfolio',
-      twitterCreator: '@hopemichael1074',
+      siteName: 'samrawit Portfolio',
+      twitterCreator: '@',
     },
   },
-  
+  pathPrefix: "/My_portfolio", // Add this line with your GitHub repo name
+
   graphqlTypegen: true,
   plugins: [
     "gatsby-transformer-remark", 
@@ -34,13 +35,14 @@ const config: GatsbyConfig = {
       },
     },
     {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
-    },
-    __key: "pages"
-  }]
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "pages",
+        "path": "./src/pages/"
+      },
+      __key: "pages"
+    }
+  ]
 };
 
 export default config;
